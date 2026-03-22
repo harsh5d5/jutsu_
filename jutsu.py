@@ -33,8 +33,9 @@ options_selfie = vision.ImageSegmenterOptions(
     base_options=base_options_selfie,
     running_mode=vision.RunningMode.IMAGE,
     output_category_mask=True # More reliable than confidence mask across OS
-)
-segmenter = vision.ImageSegmenter.create_from_options(options_selfie)
+) 
+segmenter = vision.ImageSegmenter.creat_from_options(options_selfie)
+  
 
 def detect_shadow_clone_sign(hand_landmarks_list):
     """Detects if both hands are visible to trigger the jutsu."""
